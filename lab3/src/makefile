@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -I.
-TARGETS = sequential_min_max parallel_min_max process_launcher
+TARGETS = sequential_min_max parallel_min_max runner
 OBJS = find_min_max.o utils.o
 
 all: $(TARGETS)
