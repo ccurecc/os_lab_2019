@@ -11,7 +11,7 @@ sequential_min_max: sequential_min_max.o $(OBJS)
 parallel_min_max: parallel_min_max.o $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 
-process_launcher: process_launcher.c
+runner: runner.c
 	$(CC) $(CFLAGS) $^ -o $@
 
 %.o: %.c
