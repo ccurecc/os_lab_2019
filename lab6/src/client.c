@@ -132,7 +132,7 @@ int main(int argc, char **argv) {
             fprintf(stderr, "gethostbyname failed with %s\n", servers[i].ip);
             exit(1);
         }
-        server.sin_addr.s_addr = *((unsigned long *)hostname->h_addr);
+        server.sin_addr.s_addr = *((unsigned long *)hostname->h_addrtype);
 
         // Создание сокета
         int sck = socket(AF_INET, SOCK_STREAM, 0);
